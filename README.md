@@ -1,3 +1,5 @@
 # swift-dimension-pair
 
-Pair integration for the Dimension domain: paired value typealiases for Chirality, Winding, and Orientation.
+Owns Dimension × Pair integration: paired value aliases for `Chirality`,
+`Winding`, and every Dimension Direction `Orientation`, including noncopyable
+payloads.

@@ -1,9 +1,12 @@
 public import Dimension_Direction
 public import Pair
 
-public typealias Oriented<O: Orientation, Scalar> = Pair<O, Scalar>
+public typealias Oriented<
+    O: Orientation,
+    Scalar: ~Copyable & ~Escapable
+> = Pair<O, Scalar>
 
 extension Orientation {
 
-    public typealias Value<Scalar> = Oriented<Self, Scalar>
+    public typealias Value<Scalar: ~Copyable & ~Escapable> = Oriented<Self, Scalar>
 }

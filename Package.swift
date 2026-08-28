@@ -19,7 +19,7 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/swift-molecules/swift-dimension.git",
+            url: "https://github.com/swift-atoms/swift-dimension.git",
             branch: "main"
         ),
         .package(
@@ -46,6 +46,7 @@ let package = Package(
                 "Dimension Pair",
                 .product(name: "Dimension", package: "swift-dimension"),
                 .product(name: "Pair", package: "swift-pair"),
+                .product(name: "Dimension Direction", package: "swift-dimension-direction"),
             ]
         ),
     ],

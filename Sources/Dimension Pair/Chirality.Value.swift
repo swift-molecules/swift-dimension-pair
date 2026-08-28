@@ -3,5 +3,5 @@ public import Pair
 
 extension Chirality {
 
-    public typealias Value<Payload> = Pair<Chirality, Payload>
+    public typealias Value<Payload: ~Copyable & ~Escapable> = Pair<Chirality, Payload>
 }
