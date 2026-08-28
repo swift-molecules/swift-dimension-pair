@@ -43,7 +43,7 @@ let package = Package(
         .testTarget(
             name: "Dimension Pair Tests",
             dependencies: [
-                "Dimension Pair",
+                .target(name: "Dimension Pair"),
                 .product(name: "Dimension", package: "swift-dimension"),
                 .product(name: "Pair", package: "swift-pair"),
                 .product(name: "Dimension Direction", package: "swift-dimension-direction"),
